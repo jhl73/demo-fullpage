@@ -13,8 +13,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
 
-
-    text-align: center;
+    text-align: center;  
     margin-bottom: 0;
 }
 
@@ -33,4 +32,48 @@ h1, h2, h3, h4, h5, h6{
 .texto-negro{
 
     color: black;
+}
+
+/*
+*************************HEADER***************************
+*/
+
+.header {
+    background: url('../media/img01.jpg');
+    background-position: center;
+    
+}
+
+.header .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    
+}
+
+.header .titulo {
+    font-size: 70px;
+    text-transform: uppercase;    
+    
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+
+/*
+*************************ANIMACIONES***************************
+*/
+
+
+@keyframes bajar-subir {
+    0% { transform: translateY(20px);}
+    25% { transform: translateY(0px);}
+    100% { transform: translateY(20px);}
+
 }
