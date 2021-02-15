@@ -45,6 +45,25 @@ h1, h2, h3, h4, h5, h6{
     color: orange;
 }
 
+/*
+*************************CLASES DE FULLPAGE.JS     FLECHAS SLIDE***************************
+*/
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #000 transparent transparent;
+}
+.fp-controlArrow.fp-next {    
+    border-width: 20px 20px 20px;
+    border-color: transparent transparent transparent #000;
+}
+
 .nav {
     position: fixed;
     display: flex;
@@ -92,8 +111,9 @@ h1, h2, h3, h4, h5, h6{
 */
 
 .header {
-    background: url('../media/img01.jpg');
+    background-image: url('../media/img01.jpg');
     background-position: center;
+    background-size: cover;
     
 }
 
@@ -130,3 +150,51 @@ h1, h2, h3, h4, h5, h6{
     100% { transform: translateY(20px);}
 
 }
+
+.productos article {
+    background-position: center;
+    background-size: cover;
+}
+
+.productos article:nth-child(1) {
+    background-image: url(../media/img02.jpg);
+}
+.productos article:nth-child(2) {
+    background-image: url(../media/img03.jpg);
+}
+.productos article:nth-child(3) {
+    background-image: url(../media/img02.jpg);
+}
+
+.productos .informacion-producto {
+    margin: 0 30px;
+}
+
+.productos .informacion-producto::before {
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: orange;
+    position: absolute;
+    top: 50%;
+    margin: -10px;
+}
+
+.productos .modelo {
+    font-size: 45px;
+}
+
+.productos .descripcion {
+    font-size: 22px;
+}
+
+.productos .precio {
+    font-size: 25px;
+}
+
+.productos .precio::before {
+    content: "$";
+    display: inline-block;
+}
+
