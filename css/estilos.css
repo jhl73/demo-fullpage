@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6{
 
 .texto-naranja{
 
-    font-weight: 300;
+    font-weight: 500;
     color: orange;
 }
 
@@ -33,6 +33,59 @@ h1, h2, h3, h4, h5, h6{
 
     color: black;
 }
+
+/*
+*************************CLASES DE FULLPAGE.JS***************************
+*/
+
+#fp-nav ul li a span {
+    background: orange;
+}
+#fp-nav ul li .fp-toolkit {
+    color: orange;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: white;
+    transition: .5s ease;
+
+   
+}
+
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: orange
+}
+
+
 
 /*
 *************************HEADER***************************
@@ -52,7 +105,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header .titulo {
-    font-size: 70px;
+    font-size: 50px;
     text-transform: uppercase;    
     
 }
