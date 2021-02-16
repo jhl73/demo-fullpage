@@ -140,13 +140,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .productos article:nth-child(1) {
-    background-image: url(../media/img02.jpg);
-}
-.productos article:nth-child(2) {
     background-image: url(../media/img03.jpg);
 }
-.productos article:nth-child(3) {
+.productos article:nth-child(2) {
     background-image: url(../media/img02.jpg);
+}
+.productos article:nth-child(3) {
+    background-image: url(../media/img03.jpg);
 }
 
 .productos .informacion-producto {
