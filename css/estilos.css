@@ -214,8 +214,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .footer h2 {
-    opacity: 0;
-    font-family: 'Oswald', sans-serif;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     transition: .3s ease all;
 }
 
